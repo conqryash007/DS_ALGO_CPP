@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stack>
 using namespace std;
 
 class node
@@ -27,19 +26,4 @@ node *tempBinaryTree()
     root->right->left = new node(33);
     root->right->right = new node(45);
     return root;
-}
-
-void postorderRecur(node *n)
-{
-    if (!n)
-        return;
-    postorderRecur(n->left);
-    postorderRecur(n->right);
-    cout << n->val << " ";
-}
-
-int main()
-{
-    node *root = tempBinaryTree();
-    postorderRecur(root);
 }

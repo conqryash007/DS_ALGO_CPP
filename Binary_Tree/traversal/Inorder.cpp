@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stack>
 using namespace std;
 
 class node
@@ -28,17 +29,41 @@ node *tempBinaryTree()
     return root;
 }
 
-void inorder(node *n)
+// INORDER RECURSIVE SOLUTION
+
+void inorderRecur(node *n)
 {
     if (!n)
         return;
-    inorder(n->left);
+    inorderRecur(n->left);
     cout << n->val << " ";
-    inorder(n->right);
+    inorderRecur(n->right);
+}
+
+// INORDER ITERRATIVE SOLUTION
+
+void inorderIter(node *n)
+{
+    stack<node *> stk;
+    node *curr = n;
+    while (curr != NULL || stk.empty() == false)
+    {
+        while (curr)
+        {
+            stk.push(curr);
+            curr = curr->left;
+        }
+        curr = stk.top();
+        stk.pop();
+        cout << curr->val << " ";
+        curr = curr->right;
+    }
 }
 
 int main()
 {
     node *root = tempBinaryTree();
-    inorder(root);
+    inorderRecur(root);
+    cout << endl;
+    inorderIter(root);
 }

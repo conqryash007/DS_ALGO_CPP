@@ -31,3 +31,26 @@ Result
     |-> Postorder [21,15,33,45,3,1]
     
  ```
+
+## Time Complexity - O(n) 
+## Aux space - O(h) / theta(h+1)
+### h = log(n)
+
+Breadth First/Level Order Traversal
+
+```  
+Example : 
+
+                             (1)
+                            /   \
+                           /     \
+                        (15)      (3)
+                        / \       / \   
+                     (21) NULL (33)  (45) 
+
+```
+->Level Order[1,15,3,21,33,45]
+
+## Time Complexity - O(n) 
+## Aux space - O(w) / theta(w+1)
+### w = width of level
