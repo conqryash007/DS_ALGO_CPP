@@ -48,8 +48,11 @@ Example :
                         / \       / \   
                      (21) NULL (33)  (45) 
 
+
+    |
+    |->Level Order[1,15,3,21,33,45]
+
 ```
-->Level Order[1,15,3,21,33,45]
 
 ## Time Complexity - O(n) 
 ## Aux space - O(w) / theta(w+1)
