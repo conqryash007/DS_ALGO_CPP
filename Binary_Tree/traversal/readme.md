@@ -56,4 +56,4 @@ Example :
 
 ## Time Complexity - O(n) 
 ## Aux space - O(w) / theta(w+1)
-### w = width of level
+### w = width of a level
