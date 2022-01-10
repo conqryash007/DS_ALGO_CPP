@@ -32,8 +32,8 @@ Result
     
  ```
 
-## Time Complexity - O(n) 
-## Aux space - O(h) / theta(h+1)
+### Time Complexity - O(n) 
+### Aux space - O(h) / theta(h+1)
 ### h = log(n)
 
 Breadth First/Level Order Traversal
@@ -54,6 +54,6 @@ Example :
 
 ```
 
-## Time Complexity - O(n) 
-## Aux space - O(w) / theta(w+1)
+### Time Complexity - O(n) 
+### Aux space - O(w) / theta(w+1)
 ### w = width of a level
